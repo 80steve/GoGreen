@@ -7,9 +7,20 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Config.h"
+#import "OverlayBlockerWindow.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSUserNotificationCenterDelegate> {
+    @private int _counter;
+    @private NSApplicationPresentationOptions _options;
+    @private NSTimer *_timer;
+    @private NSDictionary *_defaultMapping;
+}
 
-@property (assign) IBOutlet NSWindow *window;
+
+@property (nonatomic, strong) NSWindow *window;
+@property (nonatomic, strong) NSStatusItem *statusBar;
+
+@property (assign) IBOutlet NSMenu *statusMenu;
 
 @end

@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA1C8C1B1764E33D008A1BBE /* OverlayBlockerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1C8C1A1764E33D008A1BBE /* OverlayBlockerWindow.m */; };
 		AA605A6C1763A635008B20FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA605A6B1763A635008B20FF /* Cocoa.framework */; };
 		AA605A761763A635008B20FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA605A741763A635008B20FF /* InfoPlist.strings */; };
 		AA605A781763A635008B20FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA605A771763A635008B20FF /* main.m */; };
 		AA605A7C1763A635008B20FF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AA605A7A1763A635008B20FF /* Credits.rtf */; };
 		AA605A7F1763A635008B20FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA605A7E1763A635008B20FF /* AppDelegate.m */; };
 		AA605A821763A636008B20FF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA605A801763A636008B20FF /* MainMenu.xib */; };
+		AA69CE5A17645CAA0073516B /* AppState.m in Sources */ = {isa = PBXBuildFile; fileRef = AA69CE5917645CAA0073516B /* AppState.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA1C8C191764E33D008A1BBE /* OverlayBlockerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayBlockerWindow.h; sourceTree = "<group>"; };
+		AA1C8C1A1764E33D008A1BBE /* OverlayBlockerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayBlockerWindow.m; sourceTree = "<group>"; };
 		AA605A681763A635008B20FF /* GoGreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA605A6B1763A635008B20FF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AA605A6E1763A635008B20FF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,6 +33,9 @@
 		AA605A7D1763A635008B20FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AA605A7E1763A635008B20FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AA605A811763A636008B20FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AA69CE5817645CAA0073516B /* AppState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppState.h; sourceTree = "<group>"; };
+		AA69CE5917645CAA0073516B /* AppState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppState.m; sourceTree = "<group>"; };
+		AAC12A911764468900B59080 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +89,13 @@
 		AA605A711763A635008B20FF /* GoGreen */ = {
 			isa = PBXGroup;
 			children = (
+				AAC12A911764468900B59080 /* Config.h */,
+				AA69CE5817645CAA0073516B /* AppState.h */,
+				AA69CE5917645CAA0073516B /* AppState.m */,
 				AA605A7D1763A635008B20FF /* AppDelegate.h */,
 				AA605A7E1763A635008B20FF /* AppDelegate.m */,
+				AA1C8C191764E33D008A1BBE /* OverlayBlockerWindow.h */,
+				AA1C8C1A1764E33D008A1BBE /* OverlayBlockerWindow.m */,
 				AA605A801763A636008B20FF /* MainMenu.xib */,
 				AA605A721763A635008B20FF /* Supporting Files */,
 			);
@@ -167,6 +179,8 @@
 			files = (
 				AA605A781763A635008B20FF /* main.m in Sources */,
 				AA605A7F1763A635008B20FF /* AppDelegate.m in Sources */,
+				AA69CE5A17645CAA0073516B /* AppState.m in Sources */,
+				AA1C8C1B1764E33D008A1BBE /* OverlayBlockerWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +316,7 @@
 				AA605A871763A636008B20FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
